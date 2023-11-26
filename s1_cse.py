@@ -1,6 +1,6 @@
 import telebot
 from telebot.types import BotDescription, KeyboardButton, ReplyKeyboardMarkup
-bot = telebot.TeleBot('6217202010:AAG0nYaNj_JX2t79t1ns_fgUo_buHeYF2Ts')
+bot = telebot.TeleBot('')
 
 # User states dictionary to keep track of user's current state
 user_states = {}
