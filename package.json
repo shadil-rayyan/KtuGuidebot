@@ -8,6 +8,6 @@
     "dependencies": {
         "netlify-lambda": "^2.0.15",
         "web3": "^1.8.1",
-        "telebot": "13.2.0"
+        "telebot": "0.0.5"
     }
 }
