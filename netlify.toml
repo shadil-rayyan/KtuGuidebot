@@ -1,6 +1,12 @@
 [build]
-  command = "python3.8 -m pip install -r requirements.txt && npm install netlify-lambda -g && netlify-lambda install && netlify-lambda build lambda"
-  functions = "lambda"
+  command = "python3.8 -m pip install -r requirements.txt && npm install netlify-lambda -g && netlify-lambda install && netlify-lambda build functions"
+  functions = "functions"
+
+[[redirects]]
+  from = "/*"
+  to = "/.netlify/functions/main"
+  status = 200
+
 
   [[redirects]]
   from = "/*"
