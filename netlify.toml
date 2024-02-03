@@ -1,3 +1,8 @@
 [build]
   command = "pip install -r requirements.txt && npm install netlify-lambda -g && netlify-lambda install && netlify-lambda build"
   functions = "lambda"
+
+[[redirects]]
+  from = "/*"
+  to = "/.netlify/functions/bot"
+  status = 200
