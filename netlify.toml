@@ -8,7 +8,4 @@
   status = 200
 
 
-  [[redirects]]
-  from = "/*"
-  to = "/.netlify/functions/main"
-  status = 200
+  
