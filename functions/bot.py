@@ -2,7 +2,15 @@
 import telebot
 from telebot.types import BotDescription, KeyboardButton, ReplyKeyboardMarkup
 bot = telebot.TeleBot('6217202010:AAHKt02eMHuJp6X2OVB-3iQ7Fj58jqmYdjU')
-
+def handler(event, context):
+    # Netlify function entry point
+    data = event['body']
+    update = types.Update.de_json(data)
+    bot.process_new_updates([update])
+    return {
+        'statusCode': 200,
+        'body': 'OK'
+    }
 # User states dictionary to keep track of user's current state
 user_states = {}
 # from here start departement "CSE"
